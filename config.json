@@ -1,0 +1,10 @@
+{
+  "appUrl": "http://localhost:3000",
+  "jwtAuthKey": "authKey",
+  "jwtEmailKey": "emailKey",
+  "jwtResetPasswordKey": "resetKey",
+  "hashCycles": 10,
+  "googleClientID": "755428187476-222r6bf6lpp2qtm4okpdcd4nq75s5fgo.apps.googleusercontent.com",
+  "googleSecretCode": "lK2RkI5c8v3VnKxcprLEHyHd",
+  "fbAppID": "967894710320950"
+}

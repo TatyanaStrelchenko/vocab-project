@@ -1,0 +1,217 @@
+@import '../../themes/colors';
+
+$maxDeviceHeight: 780px;
+$maxDeviceWidth: 600px;
+
+.flex100 {
+  display: flex;
+  width: 100%;
+}
+
+.flexColumnEnd {
+  @extend .flex100;
+
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 500px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto 20px;
+}
+
+.mainForm {
+  @extend .flexColumnEnd;
+
+  width: 100%;
+  padding: 0;
+}
+
+.counterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+  font-size: 12px;
+
+  .counter {
+    @media screen and (max-device-height: $maxDeviceHeight) {
+      font-size: 0.8em;
+    }
+
+    font-size: 1.5em;
+    margin: 0 8px;
+  }
+
+  button {
+    @media screen and (max-device-height: $maxDeviceHeight) {
+      font-size: 0.7em;
+      height: 20px;
+    }
+
+    line-height: 12px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+}
+
+.exerciseTitle {
+  @media screen and (max-device-height: $maxDeviceHeight) {
+    font-size: 1.4em;
+    margin: .8em 0;
+  }
+
+  text-align: center;
+  font-size: 2em;
+}
+
+.jumbotron {
+  @extend .flexColumnEnd;
+
+  @media screen and (max-device-height: $maxDeviceHeight) {
+    min-height: 420px;
+    padding: 10px;
+  }
+
+  min-height: 550px;
+  padding: 12px;
+
+  .imageWrapper {
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (max-device-width: $maxDeviceWidth) {
+      max-width: 200px;
+    }
+
+    .soundButtonResult {
+      line-height: 1;
+      font-size: 1.3em;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .imageBlur {
+    filter: blur(20px);
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .formBlock {
+    width: 100%;
+    position: relative;
+  }
+}
+
+.answersBlock {
+  @extend .flexColumnEnd;
+
+  margin: 10px 0;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.checkAndTimer {
+  @extend .flex100;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  button {
+    width: 110px;
+    margin: 0 10px;
+  }
+
+  div {
+    position: absolute;
+    left: 65%;
+    width: 30px;
+    text-align: right;
+
+    @media screen and (max-device-width: $maxDeviceWidth) {
+      left: 70%;
+    }
+  }
+}
+
+.centeringWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+
+  @media screen and (max-device-height: $maxDeviceHeight) {
+    height: 250px;
+  }
+
+  .soundButton {
+    @media screen and (max-device-height: $maxDeviceHeight) {
+      height: 60px;
+      width: 60px;
+      font-size: 30px;
+    }
+
+    height: 120px;
+    width: 120px;
+    margin: 30px;
+    font-size: 50px;
+    line-height: 1;
+    border-radius: 50%;
+  }
+}
+
+.speechInput {
+  background: $themeWhite !important;
+  padding-right: 22px;
+
+  &:focus {
+    border-color: $themeGray;
+    box-shadow: none;
+  }
+}
+
+.speechInputWrapper {
+  width: 100%;
+  position: relative;
+
+  svg {
+    position: absolute;
+    right: 5px;
+    top: 12px;
+  }
+}
+
+.clearBtn {
+  color: $themeRed;
+  opacity: 0.7;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 12px;
+
+  svg {
+    position: absolute;
+    right: 5px;
+    top: 12px;
+  }
+}
+
+.btnCustom {
+  width: 110px;
+}
+
+.speachBtnHolder {
+  margin: 1rem 0;
+}

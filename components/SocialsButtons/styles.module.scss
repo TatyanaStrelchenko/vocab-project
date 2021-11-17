@@ -1,0 +1,54 @@
+.wrapper {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.7em;
+  max-width: 460px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.54);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 2.5em;
+  line-height: 1;
+  font-size: 16px;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 1);
+  }
+
+  &__google,
+  &__facebook {
+    font-size: 24px;
+    margin-right: 0.5em;
+  }
+
+  &__google {
+    color: #e94238;
+  }
+
+  &__facebook {
+    color: #29487d;
+  }
+}
+
+.btnHolder {
+  width: 100%;
+
+  span {
+    display: block;
+    width: 100%;
+  }
+}

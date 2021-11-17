@@ -1,0 +1,13 @@
+.fileInput {
+  > label {
+    overflow: hidden;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.addon {
+  margin: 0;
+}

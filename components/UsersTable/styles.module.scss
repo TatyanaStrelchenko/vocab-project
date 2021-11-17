@@ -1,0 +1,50 @@
+.colBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    padding: 0 5px;
+    margin: -2px 0 0;
+    line-height: 1;
+  }
+}
+
+.sortColumn {
+  cursor: pointer;
+}
+
+.sortColumnRight {
+  cursor: pointer;
+  text-align: right;
+}
+
+.usersListTable tbody td,
+.usersListTable thead th {
+  vertical-align: middle;
+}
+
+.blockRow {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+.usersHolder {
+  padding: 0 0 10px;
+  border-bottom: 1px solid lightgrey;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.col {
+  padding: 2px 0;
+
+  &:first-child {
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 30%;
+    text-align: left;
+  }
+}
+

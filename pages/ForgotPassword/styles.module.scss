@@ -1,0 +1,26 @@
+.wrapper {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+
+.secondary {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  padding: 0.3em;
+  text-align: center;
+}

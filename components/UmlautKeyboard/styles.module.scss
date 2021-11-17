@@ -1,0 +1,17 @@
+.UmlautKeyboard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+
+  @media screen and (max-device-width: 450px) {
+    width: 280px;
+  }
+
+  margin: 4px 0;
+
+  button {
+    margin: auto;
+  }
+}

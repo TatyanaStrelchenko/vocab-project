@@ -1,0 +1,90 @@
+.colBtn {
+  min-height: 35px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image {
+  width: 100px;
+}
+
+.sortColumn {
+  cursor: pointer;
+}
+
+.selectedWords {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 46px;
+
+  @media screen and (max-device-width: 360px) {
+    flex-direction: column;
+  }
+}
+
+.wordTable tbody td,
+.wordTable thead th {
+  vertical-align: middle;
+}
+
+.icon {
+  color: gray;
+}
+
+.btn-link {
+  border: none;
+  background: none;
+}
+
+.btnHolder {
+  display: flex;
+  align-items: center;
+}
+
+.wordMobile {
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-bottom: 1px solid #dee2e6;
+
+  .colLeft {
+    width: 115px;
+  }
+
+  .colRight {
+    flex: 60%;
+  }
+
+  .value {
+    display: flex;
+  }
+
+  .badgeHolder {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .colBtn {
+    display: inline-block;
+  }
+
+  .image {
+    margin-bottom: 5px;
+  }
+
+  .btnCustom {
+    line-height: 0;
+    margin: 0;
+  }
+}
+
+.lang {
+  font-weight: 600;
+}
+
+.hint {
+  color: grey;
+}

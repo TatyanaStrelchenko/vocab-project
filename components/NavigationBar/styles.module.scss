@@ -1,0 +1,86 @@
+@import '../../themes/_colors';
+
+.navlink {
+  display: block;
+  position: relative;
+  padding: 0.5em !important;
+  text-decoration: none;
+  text-align: center;
+  color: $themeAddOrange !important;
+  min-width: 90px;
+  text-transform: capitalize;
+
+  &:hover,
+  &:focus {
+    color: $themeOrange !important;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $themeYellow !important;
+  }
+
+  &.active {
+    color: $themeYellow !important;
+  }
+}
+
+.homelink {
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.dropdown {
+  border-color: $themeAddOrange !important;
+
+  &__link {
+    display: block;
+    padding: 0.5em;
+    white-space: nowrap;
+    text-decoration: none;
+    color: $themeOrange;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background: $themeAddOrange;
+      text-decoration: none;
+    }
+
+    &:active,
+    &__active {
+      color: #fff;
+      background: $themeAddYellow;
+    }
+  }
+
+  &__header {
+    padding: 0.5em;
+    color: #fff;
+  }
+}
+
+.divider {
+  height: 1px;
+  background-color: $themeAddOrange;
+}
+
+.navAvatarWrapper {
+  position: relative;
+}
+
+.navAvatar {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navAvatarText {
+  padding-left: 2rem;
+}

@@ -1,0 +1,85 @@
+.colBtn {
+  min-height: 35px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sortColumn {
+  cursor: pointer;
+}
+
+.sortColumnRight {
+  cursor: pointer;
+  text-align: right;
+}
+
+.wordlistTable tbody td,
+.wordlistTable thead th {
+  vertical-align: middle;
+}
+
+.selectedWordlists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 46px;
+
+  @media screen and (max-device-width: 360px) {
+    flex-direction: column;
+  }
+}
+
+.btnHolder {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.icon {
+  color: gray;
+}
+
+.wordMobile {
+  font-size: 14px;
+  padding: 5px 0;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.blockRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.col {
+  width: 20%;
+
+  &:first-child {
+    width: 7%;
+  }
+
+  &:nth-child(3) {
+    width: 25%;
+  }
+}
+
+.countWords {
+  margin: 0 7px;
+}
+
+.listName {
+  max-width: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btnCustom {
+  padding: 5px;
+}
